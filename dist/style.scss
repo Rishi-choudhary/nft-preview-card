@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background:  hsl(217, 54%, 11%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-radius: 10px;
+  }
+  
+  .image:hover .overlay {
+    opacity: 0.7;
+  }
+  
+  .img {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.main{
+    
+    box-shadow: 0px 10px 15px 21px #011022;
+    background: hsl(216, 50%, 16%);
+    height: 80vh;
+    width: 45vh;
+    border-radius: 12px;
+    padding: 20px;
+
+    .image{
+        height:35vh;
+    position: relative;
+
+        width: 100%;
+
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .text{
+        margin: 20px 0;
+        
+        h1{
+            color: hsl(0, 0%, 100%);
+            font-size: 20px;
+        }
+        h1:hover{
+            color: hsl(178, 100%, 50%);
+            cursor: pointer;
+        }
+        p{
+            font-size: 16px;
+            color: hsl(215, 51%, 70%);
+            padding:12px 0 12px 0;
+            line-height: 1.5;
+        }
+
+        .other-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left{
+                h1{
+                    font-size: 17px;
+                    color:  hsl(178, 100%, 50%);
+                    img{
+                        padding-right: 5px;
+                    }
+                }
+            }
+            .right{
+               p{
+                    font-size: 16   px;
+                    padding-bottom: 10px;
+                    img{
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    hr{
+        color: hsl(215, 32%, 27%);
+    }
+
+    .person-info{
+        margin-top: 15px;
+        display:flex;
+        align-items: center;
+        p{
+            color: hsl(215, 51%, 70%);
+            span{
+                color: hsl(0, 0%, 100%);
+            }
+            padding-left: 10px;
+            
+        }
+        span:hover{
+            color: hsl(178, 100%, 50%);
+            cursor: pointer;
+        }
+        img{
+            height: 40px;
+            border: white 2px solid;
+            border-radius: 50%;
+        }
+    }
+
+}
